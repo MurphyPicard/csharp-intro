@@ -1,8 +1,11 @@
-﻿using System;
+﻿using System; // So I can use Console
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+// CTRL f5 to run
+// CTRL Shift B to check
 
 namespace csharp_intro
 {
@@ -10,7 +13,16 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            var number = 2;
+
+
+            // Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+
+            const float Pi = 3.14f;
+
+            Console.WriteLine(Pi);
+
+
         }
     }
 }
