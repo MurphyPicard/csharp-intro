@@ -13,7 +13,9 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
-            // var number = 2;
+            var number = "1234";
+            int i = Convert.ToInt32(number);
+            Console.WriteLine(i);
 
 
             // Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
@@ -22,9 +24,9 @@ namespace csharp_intro
             //Console.WriteLine(Pi);
 
             
-            int i = 1;
-            byte b = (byte)i; // Doing a cast
-            Console.WriteLine(b);
+            // int i = 1000;
+            // byte b = (byte)i; // Doing a cast
+            // Console.WriteLine(b);
 
         }
     }
