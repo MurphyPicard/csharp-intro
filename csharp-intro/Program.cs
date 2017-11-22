@@ -1,5 +1,4 @@
-﻿using System; // So I can use Console
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,18 +8,6 @@ using System.Threading.Tasks;
 
 namespace csharp_intro
 {
-    public class Person
-    {
-        public string Firstname;
-        public string Lastname;
-
-        public void Introduce()
-        {
-            Console.WriteLine("My name is " + Firstname + " " + Lastname);
- 
-        }
-
-    }
 
     class Program
     {
@@ -29,7 +16,7 @@ namespace csharp_intro
 
             var ara = new Person();
             ara.Firstname = "Ara";
-            ara.Lastname = "Yaghsizian";
+            ara.Lastname = "Yaghsizian too2";
             ara.Introduce();
 
 
