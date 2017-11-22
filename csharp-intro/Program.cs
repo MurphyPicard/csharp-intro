@@ -13,9 +13,19 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
-            var number = "1234";
-            int i = Convert.ToInt32(number);
-            Console.WriteLine(i);
+            try
+            {
+                var number = "1234";
+                byte b = Convert.ToByte(number);
+                Console.WriteLine(b);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+           
 
 
             // Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
