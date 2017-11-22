@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System; // So I can use Console
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using csharp_intro.Math;
+
 
 // CTRL f5 to run
 // CTRL Shift B to check
@@ -20,7 +23,11 @@ namespace csharp_intro
             zara.Introduce();
 
 
+            Console.WriteLine("hi");
 
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(3, 7);
+            Console.WriteLine(result);
 
             //var a = 10;
             //var b = 3;
@@ -39,7 +46,7 @@ namespace csharp_intro
             //    Console.WriteLine("number could not be converted to a byte");
             //}
 
-           
+
 
 
             // Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
@@ -47,7 +54,7 @@ namespace csharp_intro
             //const float Pi = 3.14f;
             //Console.WriteLine(Pi);
 
-            
+
             // int i = 1000;
             // byte b = (byte)i; // Doing a cast
             // Console.WriteLine(b);
