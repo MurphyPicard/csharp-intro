@@ -9,14 +9,35 @@ using System.Threading.Tasks;
 
 namespace csharp_intro
 {
+    public class Person
+    {
+        public string Firstname;
+        public string Lastname;
+
+        public void Introduce()
+        {
+            Console.WriteLine("My name is " + Firstname + " " + Lastname);
+ 
+        }
+
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
 
-            var a = 10;
-            var b = 3;
-            Console.WriteLine((float)a / (float)b);
+            var ara = new Person();
+            ara.Firstname = "Ara";
+            ara.Lastname = "Yaghsizian";
+            ara.Introduce();
+
+
+
+
+            //var a = 10;
+            //var b = 3;
+            //Console.WriteLine((float)a / (float)b);
 
 
             //try
