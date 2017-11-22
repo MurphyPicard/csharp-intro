@@ -14,10 +14,10 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            var ara = new Person();
-            ara.Firstname = "Ara";
-            ara.Lastname = "Yaghsizian";
-            ara.Introduce();
+            var zara = new Person();
+            zara.Firstname = "RoZara";
+            zara.Lastname = "Yaghsizian";
+            zara.Introduce();
 
 
 
