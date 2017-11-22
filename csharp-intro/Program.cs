@@ -21,8 +21,7 @@ namespace csharp_intro
             }
             catch (Exception)
             {
-
-                throw;
+                Console.WriteLine("number could not be converted to a byte");
             }
 
            
