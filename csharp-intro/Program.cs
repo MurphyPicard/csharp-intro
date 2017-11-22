@@ -16,7 +16,7 @@ namespace csharp_intro
 
             var ara = new Person();
             ara.Firstname = "Ara";
-            ara.Lastname = "Yaghsizian too2";
+            ara.Lastname = "Yaghsizian";
             ara.Introduce();
 
 
