@@ -13,15 +13,18 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
-            var number = 2;
+            // var number = 2;
 
 
             // Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
 
-            const float Pi = 3.14f;
+            //const float Pi = 3.14f;
+            //Console.WriteLine(Pi);
 
-            Console.WriteLine(Pi);
-
+            
+            int i = 1;
+            byte b = (byte)i; // Doing a cast
+            Console.WriteLine(b);
 
         }
     }
