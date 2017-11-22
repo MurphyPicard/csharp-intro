@@ -16,18 +16,23 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
+            var numbers = new int[3] { 0, 1, 2 };
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
 
-            var zara = new Person();
-            zara.Firstname = "RoZara";
-            zara.Lastname = "Yaghsizian";
-            zara.Introduce();
+            //var zara = new Person();
+            //zara.Firstname = "RoZara";
+            //zara.Lastname = "Yaghsizian";
+            //zara.Introduce();
 
 
-            Console.WriteLine("hi");
+            //Console.WriteLine("hi");
 
-            Calculator calculator = new Calculator();
-            var result = calculator.Add(3, 7);
-            Console.WriteLine(result);
+            //Calculator calculator = new Calculator();
+            //var result = calculator.Add(3, 7);
+            //Console.WriteLine(result);
+
 
             //var a = 10;
             //var b = 3;
