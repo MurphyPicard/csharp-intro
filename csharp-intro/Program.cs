@@ -21,6 +21,13 @@ namespace csharp_intro
             Console.WriteLine(numbers[1]);
             Console.WriteLine(numbers[2]);
 
+            var flags = new bool[3];
+            flags[0] = true;
+            for (var i = 0; i < 3; i++)
+            {
+                Console.WriteLine(flags[i]);
+            }
+
             //var zara = new Person();
             //zara.Firstname = "RoZara";
             //zara.Lastname = "Yaghsizian";
