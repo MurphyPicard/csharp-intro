@@ -1,6 +1,7 @@
 ﻿using System; // So I can use Console
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using csharp_intro.Math; // So I can use calculator
@@ -11,28 +12,33 @@ using csharp_intro.Math; // So I can use calculator
 
 namespace csharp_intro
 {
-    public enum ShippingMethod
-    {
-        Regular = 1,
-        Registered = 2,
-        Express = 3
-    }
+
+    
+
 
     class Program
     {
         static void Main(string[] args)
         {
 
-            var method = ShippingMethod.Express;
-            Console.WriteLine((int)method);
+            // Section 5-41 Exercise 1 ... pick a number
+            Console.WriteLine("Please enter a number between 1 and 10");
+            var pick = Convert.ToInt32(Console.ReadLine());
 
-            // Imagine we are getting the number 3 from somewhere else
-            var methodId = 3;
-            Console.WriteLine((ShippingMethod)methodId);
+            var isValid = (pick < 10 && pick > 1) ? true : false;
+            Console.WriteLine(isValid);
 
-            // Parsing a string
-            var methodName = "Express";
-            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+
+            //var method = ShippingMethod.Express;
+            //Console.WriteLine((int)method);
+
+            //// Imagine we are getting the number 3 from somewhere else
+            //var methodId = 3;
+            //Console.WriteLine((ShippingMethod)methodId);
+
+            //// Parsing a string
+            //var methodName = "Express";
+            //var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
 
             // var firstName = "Ara";
 
