@@ -26,6 +26,10 @@ namespace csharp_intro
             var method = ShippingMethod.Express;
             Console.WriteLine((int)method);
 
+            // Imagine we are getting the number 3 from somewhere else
+            var methodId = 3;
+            Console.WriteLine((ShippingMethod)methodId);
+
             // var firstName = "Ara";
 
 
