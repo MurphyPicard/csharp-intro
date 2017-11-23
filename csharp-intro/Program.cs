@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using csharp_intro.Math;
+using csharp_intro.Math; // So I can use calculator
 
 
 // CTRL f5 to run
@@ -11,22 +11,37 @@ using csharp_intro.Math;
 
 namespace csharp_intro
 {
+    public enum ShippingMethod
+    {
+        Regular = 1,
+        Registered = 2,
+        Express = 3
+    }
 
     class Program
     {
         static void Main(string[] args)
         {
-            var numbers = new int[3] { 0, 1, 2 };
-            Console.WriteLine(numbers[0]);
-            Console.WriteLine(numbers[1]);
-            Console.WriteLine(numbers[2]);
 
-            var flags = new bool[3];
-            flags[0] = true;
-            for (var i = 0; i < 3; i++)
-            {
-                Console.WriteLine(flags[i]);
-            }
+            var method = ShippingMethod.Express;
+            Console.WriteLine((int)method);
+
+            // var firstName = "Ara";
+
+
+            //var numbers = new int[3] { 0, 1, 2 };
+            //Console.WriteLine(numbers[0]);
+            //Console.WriteLine(numbers[1]);
+            //Console.WriteLine(numbers[2]);
+
+            //var flags = new bool[3];
+            //flags[0] = true;
+            //for (var i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine(flags[i]);
+            //}
+
+            //var names = new string[3] {"Jack", "John", "Mary"};
 
             //var zara = new Person();
             //zara.Firstname = "RoZara";
@@ -57,8 +72,6 @@ namespace csharp_intro
             //{
             //    Console.WriteLine("number could not be converted to a byte");
             //}
-
-
 
 
             // Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
