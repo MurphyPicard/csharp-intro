@@ -21,26 +21,37 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
+            // Section 5-41 Exercise 3 ... landscape or portrait
+            Console.WriteLine("What is the height? ");
+            var height = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("What is the width? ");
+            var width = Convert.ToInt32(Console.ReadLine());
+
+            // Perfect square pics will be portrait
+            var pic = (width > height) ? "Landscape" : "Portrait";
+            Console.WriteLine("The image is in " + pic + " mode.");
+        
+            ///////////////////////////////////////////////////////////
             // Section 5-41 Exercise 2 ... max of two numbers
-            Console.WriteLine("Please type the first number: ");
-            var first = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please type the first number: ");
+            //var first = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Please type the second number: ");
-            var second = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please type the second number: ");
+            //var second = Convert.ToInt32(Console.ReadLine());
 
-            var bigger = (first > second) ? first : second;
-            Console.WriteLine("This is the bigger number: " + bigger);
+            //var bigger = (first > second) ? first : second;
+            //Console.WriteLine("This is the bigger number: " + bigger);
 
-
-
+            ///////////////////////////////////////////////////////////
+            // Section 5-41 Exercise 1 ... pick 1 - 10
             //Console.WriteLine("Please enter a number between 1 and 10");
             //var pick = Convert.ToInt32(Console.ReadLine());
 
             //var isValid = (pick < 10 && pick > 1) ? true : false;
             //Console.WriteLine(isValid);
 
-
+            //////////////////////////////////////////////////////////
             //var method = ShippingMethod.Express;
             //Console.WriteLine((int)method);
 
