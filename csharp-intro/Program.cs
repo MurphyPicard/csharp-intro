@@ -1,6 +1,7 @@
 ﻿using System; // So I can use Console
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,12 +22,23 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            // Section 5-41 Exercise 1 ... pick a number
-            Console.WriteLine("Please enter a number between 1 and 10");
-            var pick = Convert.ToInt32(Console.ReadLine());
+            // Section 5-41 Exercise 2 ... max of two numbers
+            Console.WriteLine("Please type the first number: ");
+            var first = Convert.ToInt32(Console.ReadLine());
 
-            var isValid = (pick < 10 && pick > 1) ? true : false;
-            Console.WriteLine(isValid);
+            Console.WriteLine("Please type the second number: ");
+            var second = Convert.ToInt32(Console.ReadLine());
+
+            var bigger = (first > second) ? first : second;
+            Console.WriteLine("This is the bigger number: " + bigger);
+
+
+
+            //Console.WriteLine("Please enter a number between 1 and 10");
+            //var pick = Convert.ToInt32(Console.ReadLine());
+
+            //var isValid = (pick < 10 && pick > 1) ? true : false;
+            //Console.WriteLine(isValid);
 
 
             //var method = ShippingMethod.Express;
