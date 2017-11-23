@@ -30,6 +30,10 @@ namespace csharp_intro
             var methodId = 3;
             Console.WriteLine((ShippingMethod)methodId);
 
+            // Parsing a string
+            var methodName = "Express";
+            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+
             // var firstName = "Ara";
 
 
