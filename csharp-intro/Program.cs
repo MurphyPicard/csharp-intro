@@ -22,21 +22,11 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            while (true)
-            {
-                Console.Write("What's your name? ");
-                var name = Console.ReadLine();
-
-                if (!String.IsNullOrWhiteSpace(name))
-                {
-                    Console.WriteLine("Echo: " + name);
-                    continue;
-                }
-
-                break;
-
-                
-            }
+            var random = new Random();
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine(random.Next());
+            
+            
 
 
 
@@ -52,7 +42,7 @@ namespace csharp_intro
             //// Perfect square pics will be portrait
             //var pic = (width > height) ? "Landscape" : "Portrait";
             //Console.WriteLine("The image is in " + pic + " mode.");
-        
+
             ///////////////////////////////////////////////////////////
             // Section 5-41 Exercise 2 ... max of two numbers
             //Console.WriteLine("Please type the first number: ");
