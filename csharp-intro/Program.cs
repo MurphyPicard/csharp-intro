@@ -22,20 +22,31 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            var random = new Random();
+            var numbers = new int[5] {0, 1, 2, 3, 4};
 
-            const int passwordLength = 9;
+            // Length
+            Console.WriteLine("Length: " + numbers.Length);
 
-            var buffer = new char[passwordLength];
+            // IndexOf()
+            var index = Array.IndexOf(numbers, 4);
+            Console.WriteLine("Index of 4: " + index);
 
-            for (int i = 0; i < passwordLength; i++)
-                buffer[i] = (char) ('a' + random.Next(0, 26));
 
-            var password = new string(buffer);
+            ////////////////////////////////////////////////////
+            //var random = new Random();
 
-            Console.WriteLine(password);
-            
-            
+            //const int passwordLength = 9;
+
+            //var buffer = new char[passwordLength];
+
+            //for (int i = 0; i < passwordLength; i++)
+            //    buffer[i] = (char) ('a' + random.Next(0, 26));
+
+            //var password = new string(buffer);
+
+            //Console.WriteLine(password);
+
+
 
 
 
