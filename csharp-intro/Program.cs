@@ -23,9 +23,17 @@ namespace csharp_intro
         {
 
             var random = new Random();
-            for (int i = 0; i < 26; i++)
-                Console.Write((char)random.Next(97,122));
-            Console.WriteLine();
+
+            const int passwordLength = 9;
+
+            var buffer = new char[passwordLength];
+
+            for (int i = 0; i < passwordLength; i++)
+                buffer[i] = (char) ('a' + random.Next(0, 26));
+
+            var password = new string(buffer);
+
+            Console.WriteLine(password);
             
             
 
