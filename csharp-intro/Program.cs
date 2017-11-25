@@ -21,23 +21,21 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
+            var name = "Rozara Yags";
 
-
-            for (var i = 1; i <= 10; i++)
+            for (var i = 0; i < name.Length; i++)
             {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine(name[i]);
             }
 
-            for (var i = 10; i >=1; i--)
+            foreach (var ch in name)
             {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine(ch);
             }
+
+            
+
+            
 
             //////////////////////////////////////////////////////////
             // Section 5-41 Exercise 3 ... landscape or portrait
