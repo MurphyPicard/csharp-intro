@@ -27,10 +27,15 @@ namespace csharp_intro
                 Console.Write("What's your name? ");
                 var name = Console.ReadLine();
 
-                if (String.IsNullOrWhiteSpace(name))
-                    break;
+                if (!String.IsNullOrWhiteSpace(name))
+                {
+                    Console.WriteLine("Echo: " + name);
+                    continue;
+                }
 
-                Console.WriteLine("Echo: " + name);
+                break;
+
+                
             }
 
 
