@@ -30,6 +30,7 @@ namespace csharp_intro
             // IndexOf()
             var index = Array.IndexOf(numbers, 4);
             Console.WriteLine("Index of 4: " + index);
+            Console.WriteLine();
 
             // Clear
             Array.Clear(numbers, 0 ,2);
@@ -50,6 +51,14 @@ namespace csharp_intro
             }
             Console.WriteLine();
 
+            // Sort
+            Array.Sort(numbers);
+            Console.WriteLine("Effect of Sort: ");
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine();
 
 
             ////////////////////////////////////////////////////
