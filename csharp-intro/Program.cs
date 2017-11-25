@@ -21,16 +21,35 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
+
+
+            for (var i = 1; i <= 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            for (var i = 10; i >=1; i--)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            //////////////////////////////////////////////////////////
             // Section 5-41 Exercise 3 ... landscape or portrait
-            Console.WriteLine("What is the height? ");
-            var height = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("What is the height? ");
+            //var height = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("What is the width? ");
-            var width = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("What is the width? ");
+            //var width = Convert.ToInt32(Console.ReadLine());
 
-            // Perfect square pics will be portrait
-            var pic = (width > height) ? "Landscape" : "Portrait";
-            Console.WriteLine("The image is in " + pic + " mode.");
+            //// Perfect square pics will be portrait
+            //var pic = (width > height) ? "Landscape" : "Portrait";
+            //Console.WriteLine("The image is in " + pic + " mode.");
         
             ///////////////////////////////////////////////////////////
             // Section 5-41 Exercise 2 ... max of two numbers
