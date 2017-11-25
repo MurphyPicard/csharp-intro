@@ -23,8 +23,9 @@ namespace csharp_intro
         {
 
             var random = new Random();
-            for (int i = 0; i < 100; i++)
-                Console.WriteLine(random.Next(44,77));
+            for (int i = 0; i < 26; i++)
+                Console.Write((char)random.Next(97,122));
+            Console.WriteLine();
             
             
 
