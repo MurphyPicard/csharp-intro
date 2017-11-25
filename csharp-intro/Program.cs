@@ -21,21 +21,20 @@ namespace csharp_intro
     {
         static void Main(string[] args)
         {
-            var name = "Rozara Yags";
 
-            for (var i = 0; i < name.Length; i++)
+            while (true)
             {
-                Console.WriteLine(name[i]);
+                Console.Write("What's your name? ");
+                var name = Console.ReadLine();
+
+                if (String.IsNullOrWhiteSpace(name))
+                    break;
+
+                Console.WriteLine("Echo: " + name);
             }
 
-            foreach (var ch in name)
-            {
-                Console.WriteLine(ch);
-            }
 
-            
 
-            
 
             //////////////////////////////////////////////////////////
             // Section 5-41 Exercise 3 ... landscape or portrait
