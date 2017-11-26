@@ -22,43 +22,52 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            var numbers = new int[5] {4,3,2,1,0};
-
-            // Length
-            Console.WriteLine("Length: " + numbers.Length);
-
-            // IndexOf()
-            var index = Array.IndexOf(numbers, 4);
-            Console.WriteLine("Index of 4: " + index);
-            Console.WriteLine();
-
-            // Clear
-            Array.Clear(numbers, 0 ,2);
-            Console.WriteLine("Effect of Clear: ");
+            var numbers = new List<int>() {9,8,7,6};
+            numbers.Add(1);
+            numbers.AddRange(new int[3] {55,66,77});
             foreach (var number in numbers)
             {
                 Console.WriteLine(number);
             }
-            Console.WriteLine();
 
-            // Copy
-            var another = new int[3];
-            Array.Copy(numbers, another, 3);
-            Console.WriteLine("Effect of Copy: ");
-            foreach (var n in another)
-            {
-                Console.WriteLine(n);
-            }
-            Console.WriteLine();
+            ////////////////////////////////////////////////////////
+            //var numbers = new int[5] {4,3,2,1,0};
 
-            // Sort
-            Array.Sort(numbers);
-            Console.WriteLine("Effect of Sort: ");
-            foreach (var number in numbers)
-            {
-                Console.WriteLine(number);
-            }
-            Console.WriteLine();
+            //// Length
+            //Console.WriteLine("Length: " + numbers.Length);
+
+            //// IndexOf()
+            //var index = Array.IndexOf(numbers, 4);
+            //Console.WriteLine("Index of 4: " + index);
+            //Console.WriteLine();
+
+            //// Clear
+            //Array.Clear(numbers, 0 ,2);
+            //Console.WriteLine("Effect of Clear: ");
+            //foreach (var number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            //Console.WriteLine();
+
+            //// Copy
+            //var another = new int[3];
+            //Array.Copy(numbers, another, 3);
+            //Console.WriteLine("Effect of Copy: ");
+            //foreach (var n in another)
+            //{
+            //    Console.WriteLine(n);
+            //}
+            //Console.WriteLine();
+
+            //// Sort
+            //Array.Sort(numbers);
+            //Console.WriteLine("Effect of Sort: ");
+            //foreach (var number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            //Console.WriteLine();
 
 
             ////////////////////////////////////////////////////
