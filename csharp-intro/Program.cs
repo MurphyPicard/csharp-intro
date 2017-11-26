@@ -29,6 +29,12 @@ namespace csharp_intro
             {
                 Console.WriteLine(number);
             }
+            Console.WriteLine();
+            Console.WriteLine("numbers.indexof(6): " + numbers.IndexOf(6));
+            Console.WriteLine("numbers.lastindexof(6): " + numbers.LastIndexOf(6));
+            Console.WriteLine("numbers.count: " + numbers.Count);
+            Console.WriteLine("numbers.Contains(6): " + numbers.Contains(6));
+            
 
             ////////////////////////////////////////////////////////
             //var numbers = new int[5] {4,3,2,1,0};
