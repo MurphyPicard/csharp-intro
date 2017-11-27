@@ -34,6 +34,11 @@ namespace csharp_intro
             Console.WriteLine("numbers.lastindexof(6): " + numbers.LastIndexOf(6));
             Console.WriteLine("numbers.count: " + numbers.Count);
             Console.WriteLine("numbers.Contains(6): " + numbers.Contains(6));
+            Console.WriteLine("numbers.remove(6): " + numbers.Remove(6));
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
             
 
             ////////////////////////////////////////////////////////
