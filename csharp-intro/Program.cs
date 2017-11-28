@@ -33,6 +33,8 @@ namespace csharp_intro
             var duration = end - start;
             Console.WriteLine("Duration: " + duration);
 
+
+            // Two of many properties
             Console.WriteLine("Minutes: " + timespan.Minutes);            // Displays just the minutes
             Console.WriteLine("Total Minutes: " + timespan.TotalMinutes); // Displays the whole timespan in minutes
 
