@@ -27,7 +27,8 @@ namespace csharp_intro
             var today = DateTime.Today;
 
             Console.WriteLine(datetime);
-            Console.WriteLine(now);
+            Console.WriteLine(now.Hour);
+            Console.WriteLine(now.ToString("yyyy MMMM dd hh:mm:ss"));
             Console.WriteLine(today);
 
             //////////////////////////////////////////////////////////////////////
