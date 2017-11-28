@@ -22,23 +22,32 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            var numbers = new List<int>() {9,8,7,6};
-            numbers.Add(1);
-            numbers.AddRange(new int[3] {55,66,77});
-            foreach (var number in numbers)
-            {
-                Console.WriteLine(number);
-            }
-            Console.WriteLine();
-            Console.WriteLine("numbers.indexof(6): " + numbers.IndexOf(6));
-            Console.WriteLine("numbers.lastindexof(6): " + numbers.LastIndexOf(6));
-            Console.WriteLine("numbers.count: " + numbers.Count);
-            Console.WriteLine("numbers.Contains(6): " + numbers.Contains(6));
-            Console.WriteLine("numbers.remove(6): " + numbers.Remove(6));
-            for (int i = 0; i < numbers.Count; i++)
-            {
-                Console.WriteLine(numbers[i]);
-            }
+            var datetime = new DateTime(1999, 12, 31);
+            var now = DateTime.Now;
+            var today = DateTime.Today;
+
+            Console.WriteLine(datetime);
+            Console.WriteLine(now);
+            Console.WriteLine(today);
+
+            //////////////////////////////////////////////////////////////////////
+            //var numbers = new List<int>() {9,8,7,6};
+            //numbers.Add(1);
+            //numbers.AddRange(new int[3] {55,66,77});
+            //foreach (var number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("numbers.indexof(6): " + numbers.IndexOf(6));
+            //Console.WriteLine("numbers.lastindexof(6): " + numbers.LastIndexOf(6));
+            //Console.WriteLine("numbers.count: " + numbers.Count);
+            //Console.WriteLine("numbers.Contains(6): " + numbers.Contains(6));
+            //Console.WriteLine("numbers.remove(6): " + numbers.Remove(6));
+            //for (int i = 0; i < numbers.Count; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
             
 
             ////////////////////////////////////////////////////////

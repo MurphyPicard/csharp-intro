@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace DateTime
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("test 134545");
+            var datetime = new System.DateTime(2017, 11, 1);
+            Console.WriteLine("HI");
         }
     }
 }
