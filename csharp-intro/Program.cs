@@ -22,21 +22,36 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            ////////////////////////////////////////// Creating TimeSpan objects
-            var timespan = new TimeSpan(1,2,8);
+            //////////////////////////////////////////////// Playing with Strings
+            var fullname = "Ara Yags";
+            Console.WriteLine("Trim: '{0}'", fullname.Trim());
+            Console.WriteLine("ToUpper: '{0}'", fullname.Trim().ToUpper());
 
-            var timespan1 = new TimeSpan(1,1,8);
-            TimeSpan.FromSeconds(8);
-
-            var start = DateTime.Now;
-            var end = DateTime.Now.AddSeconds(18);
-            var duration = end - start;
-            Console.WriteLine("Duration: " + duration);
+            var index = fullname.IndexOf(' ');
+            var firstname = fullname.Substring(0, index);
+            var lastname = fullname.Substring(index + 1);
+            Console.WriteLine("FirstName: " + firstname);
+            Console.WriteLine("lastname: " + lastname);
 
 
-            // Two of many properties
-            Console.WriteLine("Minutes: " + timespan.Minutes);            // Displays just the minutes
-            Console.WriteLine("Total Minutes: " + timespan.TotalMinutes); // Displays the whole timespan in minutes
+
+
+
+            //////////////////////////////////////////// Creating TimeSpan objects
+            //var timespan = new TimeSpan(1,2,8);
+
+            //var timespan1 = new TimeSpan(1,1,8);
+            //TimeSpan.FromSeconds(8);
+
+            //var start = DateTime.Now;
+            //var end = DateTime.Now.AddSeconds(18);
+            //var duration = end - start;
+            //Console.WriteLine("Duration: " + duration);
+
+
+            //// Two of many properties
+            //Console.WriteLine("Minutes: " + timespan.Minutes);            // Displays just the minutes
+            //Console.WriteLine("Total Minutes: " + timespan.TotalMinutes); // Displays the whole timespan in minutes
 
 
             ////////////////////////////////////////////////////// DateTime
