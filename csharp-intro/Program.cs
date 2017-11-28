@@ -33,6 +33,8 @@ namespace csharp_intro
             Console.WriteLine("FirstName: " + firstname);
             Console.WriteLine("lastname: " + lastname);
 
+            if (String.IsNullOrWhiteSpace(" "))
+                Console.WriteLine("invalid");
 
 
 
