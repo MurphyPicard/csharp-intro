@@ -40,6 +40,29 @@ namespace csharp_intro
             Console.WriteLine(price.ToString("C"));
             Console.WriteLine(price.ToString("C0"));
 
+            var sentence = "This is a really really really really long sentence";
+            const int maxLength = 20;
+
+            if (sentence.Length < maxLength)
+                Console.WriteLine(sentence);
+            else
+            {
+                var words = sentence.Split(' ');
+                var totalCharacters = 0;
+                var summaryWords = new List<string>();
+
+                foreach (var word in words)
+                {
+                    summaryWords.Add(word);
+                    totalCharacters += word.Length + 1;
+                    if (totalCharacters > maxLength)
+                        break;
+                    
+                }
+                var summary = String.Join(" ", summaryWords) + "...";
+                Console.WriteLine(summary);
+            }
+
 
 
 
