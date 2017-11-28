@@ -22,14 +22,30 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            var datetime = new DateTime(1999, 12, 31);
-            var now = DateTime.Now;
-            var today = DateTime.Today;
+            ////////////////////////////////////////// Creating TimeSpan objects
+            var timespan = new TimeSpan(1,2,8);
 
-            Console.WriteLine(datetime);
-            Console.WriteLine(now.Hour);
-            Console.WriteLine(now.ToString("yyyy MMMM dd hh:mm:ss"));
-            Console.WriteLine(today);
+            var timespan1 = new TimeSpan(1,1,8);
+            TimeSpan.FromSeconds(8);
+
+            var start = DateTime.Now;
+            var end = DateTime.Now.AddSeconds(18);
+            var duration = end - start;
+            Console.WriteLine("Duration: " + duration);
+
+            Console.WriteLine("Minutes: " + timespan.Minutes);            // Displays just the minutes
+            Console.WriteLine("Total Minutes: " + timespan.TotalMinutes); // Displays the whole timespan in minutes
+
+
+            ////////////////////////////////////////////////////// DateTime
+            //var datetime = new DateTime(1999, 12, 31);
+            //var now = DateTime.Now;
+            //var today = DateTime.Today;
+
+            //Console.WriteLine(datetime);
+            //Console.WriteLine(now.Hour);
+            //Console.WriteLine(now.ToString("yyyy MMMM dd hh:mm:ss"));
+            //Console.WriteLine(today);
 
             //////////////////////////////////////////////////////////////////////
             //var numbers = new List<int>() {9,8,7,6};
@@ -49,7 +65,7 @@ namespace csharp_intro
             //{
             //    Console.WriteLine(numbers[i]);
             //}
-            
+
 
             ////////////////////////////////////////////////////////
             //var numbers = new int[5] {4,3,2,1,0};
