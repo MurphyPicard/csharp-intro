@@ -36,6 +36,10 @@ namespace csharp_intro
             if (String.IsNullOrWhiteSpace(" "))
                 Console.WriteLine("invalid");
 
+            float price = 29.95f;
+            Console.WriteLine(price.ToString("C"));
+            Console.WriteLine(price.ToString("C0"));
+
 
 
 
