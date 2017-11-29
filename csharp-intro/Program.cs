@@ -1,5 +1,6 @@
 ﻿using System; // So I can use Console
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Policy;
@@ -19,9 +20,13 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            var sentence = "This is a really really really really long sentence";
-            var summary = StringUtility.SummerizeText(sentence, 35); // notice how I changed maxLength
-            Console.WriteLine(summary);
+            var files = Directory.GetFiles(@"C:\Users\ADMIN\source\repos\csharp-intro", "*.*", SearchOption.AllDirectories);
+            foreach (var file in files)
+            {
+                Console.WriteLine(file);
+            }
+
+            Console.WriteLine("hi");
 
         }
 
