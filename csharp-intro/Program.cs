@@ -14,41 +14,16 @@ using csharp_intro.Math; // So I can use calculator
 namespace csharp_intro
 {
 
-    
-
-
     class Program
     {
         static void Main(string[] args)
         {
 
             var sentence = "This is a really really really really long sentence";
-            var summary = SummerizeText(sentence, 35);
+            var summary = StringUtility.SummerizeText(sentence, 35); // notice how I changed maxLength
             Console.WriteLine(summary);
 
         }
 
-        static string SummerizeText(string text, int maxLength = 20)
-        {
-            
-            if (text.Length < maxLength)
-                return text;
-            
-            var words = text.Split(' ');
-            var totalCharacters = 0;
-            var summaryWords = new List<string>();
-
-            foreach (var word in words)
-            {
-                summaryWords.Add(word);
-                totalCharacters += word.Length + 1;
-                if (totalCharacters > maxLength)
-                    break;
-
-            }
-            
-            return String.Join(" ", summaryWords) + "...";
-
-        }
     }
 }
