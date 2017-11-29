@@ -20,16 +20,7 @@ namespace csharp_intro
         static void Main(string[] args)
         {
 
-            var files = Directory.GetFiles(@"C:\Users\ADMIN\source\repos\csharp-intro", "*.sln", SearchOption.AllDirectories);
-            foreach (var file in files)
-            {
-                Console.WriteLine(file);
-            }
-
-            Console.WriteLine();
-            // var directories = Directory.GetDirectories(@"");
-
-            Console.WriteLine("hi");
+            // Debugging practice
 
         }
 
