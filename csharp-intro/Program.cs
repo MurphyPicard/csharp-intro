@@ -32,8 +32,8 @@ namespace csharp_intro
 
 
         // to be continued 10-78
-        public static List<int> GetSmallests(List<int> list, int count)
+        //public static List<int> GetSmallests(List<int> list, int count)
 
-        public static int GetSmallest(List<int> list)
+        //public static int GetSmallest(List<int> list)
     }
 }
